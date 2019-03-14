@@ -3,7 +3,7 @@
 item cf main Algo
 
 """
-from __future__import.division
+from __future__ import division
 import sys
 sys.path.append('../util')
 import util.reader as reader
