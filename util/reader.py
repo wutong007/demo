@@ -1,6 +1,5 @@
 import os
 
-
 def get_user_click(rating_file):
     """
     get user click list
@@ -66,8 +65,8 @@ def get_item_info(item_file):
 
 
 if __name__ == '__main__':
-    # user_click = get_user_click('../data/ratings.txt')
-    # print(len(user_click))
-    # print(user_click['1'])
+    user_click = get_user_click('../data/ratings.txt')
+    print(len(user_click))
+    print(user_click['1'])
     item_info = get_item_info('../data/movies.txt')
     print(item_info['1'])
