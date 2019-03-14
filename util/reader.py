@@ -10,8 +10,10 @@ def get_user_click(rating_file):
     """
     if not os.path.exists(rating_file):
         return {}
-    # 打开含有中文字符的（全角符）文本时，必须统一“utf-8”编码
-    fp = open(rating_file, 'r', encoding='utf-8')
+
+    # fp = open(rating_file, 'r', encoding='utf-8')
+    # fp = open(rating_file)
+    fp = open(rating_file)
     num = 0
     user_click = {}
     for line in fp:
@@ -43,8 +45,8 @@ def get_item_info(item_file):
         return ()
     num = 0
     item_info = {}
-    # 打开含有中文字符的（全角符）文本时，必须统一“utf-8”编码
-    fp = open(item_file, 'r', encoding='utf-8')
+    # fp = open(item_file, 'r', encoding='utf-8')
+    fp = open(item_file)
     for line in fp:
         if num == 0:
             num += 1
